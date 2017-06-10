@@ -48,7 +48,7 @@ console.log(nowServing);
 
 /*The array.unshift() adds one or more elements to the front of an array and returns the new length of the array*/
 
-var willServe = waitList.unshift "Old Dirty Bastard";
+var willServe = waitList.unshift(Old Dirty Bastard);
 console.log(willServe);
 
 /*5. Apparently, you didn't do a good job with crowd control in the previous exercise. Kanye just cut in front of everyone!. Add Kanye to the waitList array above. Console.log waitList*/
