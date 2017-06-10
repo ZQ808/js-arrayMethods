@@ -14,7 +14,9 @@
 
 var hof = ["Jordan", "Bird", "Kobe", "Duncan", "Iverson", "Bonner"];
 
-
+var notHof = hof.pop();
+console.log(hof);
+console.log(notHof);
 
 /* The array.push() adds one or more element to the end of an array and returns the new length of the array*/
 
@@ -22,8 +24,9 @@ var hof = ["Jordan", "Bird", "Kobe", "Duncan", "Iverson", "Bonner"];
 
 var shoppingList = ["cool ranch doritos", "kings hawaiian sweet bread", "peanut butter oreos", "fruit loops cereal"];
 
-
-
+var newList = shoppingList.push("Hendricks");
+console.log(shoppingList);
+console.log(newList);
 
 /*The array.reverse() reverses the order of the element of an array in place - the first becomes the last and the last becomes the first*/
 
@@ -31,7 +34,7 @@ var shoppingList = ["cool ranch doritos", "kings hawaiian sweet bread", "peanut 
 
 var yoda = ["try", "no", "is", "there", "not", "do", "or", "do"];
 
-
+var 
 
 /*The array.shift() removes the first element from an array and returns that element*/
 
