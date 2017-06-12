@@ -50,12 +50,14 @@ console.log(newCar);
 var yoda = ["try", "no", "is", "there", "not", "do", "or", "do"];
 
 var newLast = yoda.reverse();
+console.log(yoda);
 console.log(newLast);
 
 
-var message = ["dog", "lazy", "the", "over", "jumps", "fox", "brown", "quick", "the"];
+var message = [" dog", " lazy", " the", " over", " jumps", " fox", " brown", " quick", "the"];
 
 var newMessage = message.reverse();
+console.log(message);
 console.log(newMessage);
 
 /*The array.shift() removes the first element from an array and returns that element*/
@@ -65,25 +67,29 @@ console.log(newMessage);
 var waitList = ["Chance the Rapper", "Khalid", "Tay-Tay", "Barry Manilow", "Piko Taro"];
 
 var nowServing = waitList.shift();
-console.log(nowServing);
+console.log(waitList);
+console.log("nowServing:", nowServing);
 
 
-var goodList = ["Bar Rafaeli", "Adriana Lima", "Alessandra Ambrosio", "Izabel Goulart", "Xenia Tchomitchova", "Erin Heatherton"];
+var goodList = ["Bar Rafaeli", "Adriana Lima", "Alessandra Ambrosio", "Izabel Goulart", "Xenia Tchoumitchova", "Erin Heatherton"];
 
 var willWaitOn = goodList.shift();
-console.log(willWaitOn);
+console.log(goodList);
+console.log("willWaitOn:", willWaitOn);
 
 /*The array.unshift() adds one or more elements to the front of an array and returns the new length of the array*/
 
 var wuTangList = ["Frank Sinatra", "Mel Torme", "Johnny Cash", "Marilyn Monroe", "James Dean"];
 
 var willServe = wuTangList.unshift("Old Dirty Bastard");
+console.log(wuTangList);
 console.log("willServe:", willServe);
 
 
 var colorList = ["Orange", "Yellow", "Green", "Blue", "Indigo", "Violet"];
 
 var myColor = colorList.unshift("Red");
+console.log(colorList);
 console.log("myColor:", myColor);
 
 /*5. Apparently, you didn't do a good job with crowd control in the previous exercise. Kanye just cut in front of everyone!. Add Kanye to the waitList array above. Console.log waitList*/
@@ -91,17 +97,23 @@ console.log("myColor:", myColor);
 /*The array.splice() adds and/or removes elements from an array.
 array.splice(index, how many items to be removed)*/
 
-var newLine = wuTangList.splice("Kanye") + array.splice(4);
-console.log(newLine);
-
-
-var schoolList = ["Will Ferrell", "Colin Ferrell", "Chad Smith", "Tracy Morgan", ]
+var newTangLine = wuTangList.unshift("Kanye");
+console.log("newTangLine:", newTangLine);
 
 /*6. As head of McDonald's New Product Division, your job is to test and approve all new menu items. In the testMenu array below, all the items are approved except for "McLinguine" and "McChar-Siu Bau". Remove these items from the list and console.log the updated testMenu.*/
 
 var testMenu = ["McPizza Burger", "McFly Burger", "McLinguine", "McChar-Siu Bau", "McChop-Chae", "McPancit"];
 
+var noMenu = testMenu.splice(2, 2, "McChop-Chae", "McPancit");
+console.log(noMenu);
+console.log("noMenu:", noMenu);
 
+
+var schoolList = ["Will Ferrell", "Tracy Morgan", "Dave Chappell", "Colin Ferrell", "Chad Smith", "Fred Armisen"];
+
+var newSchool = schoolList.splice(3, 2);
+console.log(schoolList);
+console.log("newSchool:", newSchool);
 
 /*=============================================================*/
 
@@ -114,15 +126,37 @@ var testMenu = ["McPizza Burger", "McFly Burger", "McLinguine", "McChar-Siu Bau"
 var westSide = ["Dre", "2Pac", "Snoop"];
 var eastSide = ["Biggie", "Diddy", "Craig Mack"];
 
+var allSide = westSide.concat(eastSide);
+console.log(westSide);
+console.log(eastSide);
+console.log(allSide);
 
+
+var soundGarden = ["Chris Cornell", "Kim Thayil", "Ben Shepard", "Matt Cameron"];
+var rageAgainstTheMachine = ["Zack de la Rocha", "Tom Morello", "Tim Commerford", "Brad Wilk"];
+
+var megaSinger = soundGarden.splice(0, 1);
+var megaBand = rageAgainstTheMachine.splice(1, 3);
+
+var audioSlave = megaBand.concat(megaSinger);
+console.log(soundGarden);
+console.log(rageAgainstTheMachine);
+console.log("audioSlave:", audioSlave);
 
 /*The array.join() joins all the elements of an array into a string.*/
 
 /*8. Help Nike sell more overpriced sneakers by changing their slogan from an array into a string. Convert the shoe array and assign it to a variable named `shoeString`. Console.log this new variable.*/
 
-var shoe = ["just", "do", "it"];
+var shoe = ["just", " do", " it"];
+
+var shoeString = shoe.join();
+console.log(shoeString);
 
 
+var neighborsMovie = ["People", " Under", " The", " Stairs"];
+
+var familyFlick = neighborsMovie.join();
+console.log(familyFlick);
 
 /*The array.slice() extracts a section of an array and returns a new array.
 array.slice(index start, index end)*/
@@ -132,7 +166,11 @@ array.slice(index start, index end)*/
 
 var fbFriends = ["Khalid", "Yeezy", "Kimmy K", "Lamar Odom", "Lebron", "Warren Buffet"];
 
+var unFriend = fbFriends.slice(1,4);
+console.log(unFriend);
 
 
+var newJackets = ["AlpineStars", "Dainese", "Rev It", "Icon", "Strength & Speed"];
 
-
+var noJackets = newJackets.slice(2, 5);
+console.log(noJackets);
