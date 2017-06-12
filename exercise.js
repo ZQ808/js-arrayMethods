@@ -18,6 +18,14 @@ var notHof = hof.pop();
 console.log(hof);
 console.log(notHof);
 
+
+
+var gil = ["Mickey", "Minnie", "Pluto", "Donald", "Daisy", "Kermit"];
+
+var notGil = gil.pop();
+console.log(gil);
+console.log(notGil);
+
 /* The array.push() adds one or more element to the end of an array and returns the new length of the array*/
 
 /*2. You've been tasked to do this week's grocery shopping. As you arrive at Times Supermarket, Kanye pings you to get a bottle of Hendricks gin. Add this to the existing shoppingList and console.log it.*/
@@ -28,6 +36,13 @@ var newList = shoppingList.push("Hendricks");
 console.log(shoppingList);
 console.log(newList);
 
+
+var carList = ["Pontiac", "Chevrolet", "Oldmobile", "Saturn", "GMC"];
+
+var newCar = carList.push("Hummer");
+console.log(carList);
+console.log(newCar);
+
 /*The array.reverse() reverses the order of the element of an array in place - the first becomes the last and the last becomes the first*/
 
 /*3. Use the force, or in this case the reverse method to help Yoda make some sense with his motivational talk to the young Jedi interns.*/
@@ -36,6 +51,12 @@ var yoda = ["try", "no", "is", "there", "not", "do", "or", "do"];
 
 var newLast = yoda.reverse();
 console.log(newLast);
+
+
+var message = ["dog", "lazy", "the", "over", "jumps", "fox", "brown", "quick", "the"];
+
+var newMessage = message.reverse();
+console.log(newMessage);
 
 /*The array.shift() removes the first element from an array and returns that element*/
 
@@ -46,18 +67,35 @@ var waitList = ["Chance the Rapper", "Khalid", "Tay-Tay", "Barry Manilow", "Piko
 var nowServing = waitList.shift();
 console.log(nowServing);
 
+
+var goodList = ["Bar Rafaeli", "Adriana Lima", "Alessandra Ambrosio", "Izabel Goulart", "Xenia Tchomitchova", "Erin Heatherton"];
+
+var willWaitOn = goodList.shift();
+console.log(willWaitOn);
+
 /*The array.unshift() adds one or more elements to the front of an array and returns the new length of the array*/
 
-var willServe = waitList.unshift(Old Dirty Bastard);
-console.log(willServe);
+var wuTangList = ["Frank Sinatra", "Mel Torme", "Johnny Cash", "Marilyn Monroe", "James Dean"];
+
+var willServe = wuTangList.unshift("Old Dirty Bastard");
+console.log("willServe:", willServe);
+
+
+var colorList = ["Orange", "Yellow", "Green", "Blue", "Indigo", "Violet"];
+
+var myColor = colorList.unshift("Red");
+console.log("myColor:", myColor);
 
 /*5. Apparently, you didn't do a good job with crowd control in the previous exercise. Kanye just cut in front of everyone!. Add Kanye to the waitList array above. Console.log waitList*/
 
 /*The array.splice() adds and/or removes elements from an array.
 array.splice(index, how many items to be removed)*/
 
-var newLine = waitList.splice("Kanye");
+var newLine = wuTangList.splice("Kanye") + array.splice(4);
 console.log(newLine);
+
+
+var schoolList = ["Will Ferrell", "Colin Ferrell", "Chad Smith", "Tracy Morgan", ]
 
 /*6. As head of McDonald's New Product Division, your job is to test and approve all new menu items. In the testMenu array below, all the items are approved except for "McLinguine" and "McChar-Siu Bau". Remove these items from the list and console.log the updated testMenu.*/
 
